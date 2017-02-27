@@ -7,7 +7,9 @@ class Store {
   }
 
   addListener(listener) {
-    // TODO
+    this.listeners.push(listener);
+    const removeListener = () => {this.listeners.filter(l => this.listener !== l)};
+    return removeListener;
   }
 
   setState(state) {
