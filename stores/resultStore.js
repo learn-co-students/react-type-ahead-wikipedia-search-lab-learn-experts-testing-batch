@@ -1,13 +1,9 @@
 'use strict';
 
 const Store = require('./Store');
-const options = {
-  results: [],
-  updated: new Date(),
-  query: ''
-}
+
 class ResultStore extends Store{
-  constructor(initialState = options){
+  constructor(initialState = {results: [], updated: new Date(), query: ''}){
     super(initialState);
     this.state = initialState
   }
