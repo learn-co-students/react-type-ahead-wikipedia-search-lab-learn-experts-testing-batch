@@ -44,7 +44,7 @@ describe('Store', function () {
         const listeners = [sinon.spy(), sinon.spy(), sinon.spy()];
         const store = new Store();
         const removeListeners = listeners
-          .map(listener => store.addListener(listener));
+           .map(listener => store.addListener(listener));
 
         store.setState(0);
 
